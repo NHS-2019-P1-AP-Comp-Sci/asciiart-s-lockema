@@ -17,11 +17,72 @@
 // YOU CODE HERE :) 
 
 public class ASCIIArt {
+	
+	public static void printIntro() {
+		System.out.println("THIS IS MY ASCII ART!!!!");
+		System.out.println("THIS IS MY ASCII ART!!!!");
+		System.out.println("THIS IS MY ASCII ART!!!!");
+		System.out.println("THIS IS MY ASCII ART!!!!");
+		System.out.println("THIS IS MY ASCII ART!!!!");
+		
+		System.out.println("\n");
+		System.out.println("This is a snare drum!");
+		System.out.println("\n\n");
+	}
+	
+	public static void snareHead() {
+		System.out.println("      ______________________");		
+		System.out.println("     /         REMO         \\");
+		System.out.println("    /                        \\");
+		System.out.println("   |\\                        /|");
+		System.out.println("   ||\\______________________/||");
+	}
+	
+	//Used in snareSides()
+	public static void verticalLines() {
+		System.out.println("   ||   ||\t||\t||   ||");
+	}
+	
+	public static void snareSides() {
+		verticalLines();
+		verticalLines();
+		verticalLines();
+		verticalLines();
+		verticalLines();
+		verticalLines();
+	}
+	
+	public static void snareBottom() {
+		System.out.println("    \\   ||      ||      ||   /");
+		System.out.println("     \\__||______||______||__/");
+	}
+	
+	public static void rightDrumstick() {
+		System.out.println("       ______________________ ");
+		System.out.println("    (><______________________)");
+	}
+		
+	public static void leftDrumstick() {
+		System.out.println("     ______________________");
+		System.out.println("    (______________________><)");
+	}
+	
+	public static void pairOfSticks() {
+		rightDrumstick();
+		leftDrumstick();
+	}
+	
 	public static void main (String [] args) {
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
+
+		printIntro();		
+	
+		snareHead();
+		snareSides();
+		snareBottom();
+		
+		System.out.println();
+		
+		pairOfSticks();
+		
 	}
 }
